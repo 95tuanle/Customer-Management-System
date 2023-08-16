@@ -32,7 +32,7 @@ public class Validator {
         this.defaultJTextFieldBorder = defaultJTextFieldBorder;
     }
 
-//    Validate user input base on conditions, this will trigger UI elements to let user know which fields that they entered invalid inputs
+    //    Validate user input base on conditions, this will trigger UI elements to let user know which fields that they entered invalid inputs
     public boolean validate(JTextField nameJTextField, JLabel nameResultJLabel, JTextField phoneJTextField, JLabel phoneResultJLabel, JTextField emailJTextField, JLabel emailResultJLabel, JTextField postalCodeJTextField, JLabel postalCodeResultJLabel) {
         boolean isValid = true;
         if (nameJTextField.getText().isBlank() || nameJTextField.getText().isEmpty()) {
@@ -77,7 +77,7 @@ public class Validator {
         return isValid;
     }
 
-//    This will set up the UI elements to let the user know about the input errors
+    //    This will set up the UI elements to let the user know about the input errors
     private void triggerInvalidJTextField(JTextField jTextField, JLabel jLabel, String message) {
         jLabel.setText(message);
         jLabel.setForeground(Color.RED);
@@ -89,11 +89,13 @@ public class Validator {
                 jTextField.setBorder(defaultJTextFieldBorder);
                 jLabel.setText("");
             }
+
             @Override
             public void removeUpdate(DocumentEvent e) {
                 jTextField.setBorder(defaultJTextFieldBorder);
                 jLabel.setText("");
             }
+
             @Override
             public void changedUpdate(DocumentEvent e) {
                 jTextField.setBorder(defaultJTextFieldBorder);

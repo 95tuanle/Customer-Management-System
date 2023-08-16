@@ -11,10 +11,9 @@ package edu.humber.views; /*****************************************************
 import edu.humber.Validator;
 import edu.humber.controllers.CustomerController;
 
-import java.awt.*;
-
 import javax.swing.*;
 import javax.swing.border.Border;
+import java.awt.*;
 
 /**
  * Customer Create View
@@ -24,7 +23,7 @@ import javax.swing.border.Border;
  * @author Swapnil Roy Chowdhury & Nguyen Anh Tuan Le
  */
 public class CustomerCreateView {
-//    All panels are grouped into a single panel with Border layout.
+    //    All panels are grouped into a single panel with Border layout.
     private final JPanel addCustomerJPanel = new JPanel(new BorderLayout());
     private final Border defaultJTextFieldBorder = new JTextField().getBorder();
 
